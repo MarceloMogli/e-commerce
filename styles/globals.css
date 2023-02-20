@@ -490,6 +490,13 @@ padding: 30px 65px;
   display: flex;
   gap: 30px;
 }
+
+@media screen and (max-width: 1080px){
+  .product-detail-desc .buttons{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .buttons .add-to-cart{
   padding: 10px 20px;
   border: 1px solid #f02d34 ;
@@ -618,7 +625,7 @@ margin-top: 160px;
   margin-top: 10px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
   .hero-banner-container{
     height: 560px;
   }

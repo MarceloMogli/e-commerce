@@ -1,9 +1,25 @@
-import React from 'react'
+import React from "react";
+import Head from "next/head";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <div>Layout</div>
-  )
-}
+    <div>
+      <div className="layout">
+        <Head>
+          <title>TechWave Store</title>
+        </Head>
+        <header>
+          <NavBar />
+        </header>
+        <main className="main-container">{children}</main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
