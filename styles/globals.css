@@ -491,12 +491,6 @@ padding: 30px 65px;
   gap: 30px;
 }
 
-@media screen and (max-width: 1080px){
-  .product-detail-desc .buttons{
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
 .buttons .add-to-cart{
   padding: 10px 20px;
   border: 1px solid #f02d34 ;

@@ -54,6 +54,7 @@ export const StateContext = ({ children }) => {
       (prevTotalQuantities) => prevTotalQuantities - foundProduct.quantity
     );
     setCartItems(newCartItems);
+    toast.error(`${qty} ${product.name} removed from the cart.`);
   };
 
   const toogleCartItemQuantity = (id, value) => {
@@ -103,6 +104,9 @@ export const StateContext = ({ children }) => {
         onAdd,
         toogleCartItemQuantity,
         onRemove,
+        setCartItems,
+        setTotalPrice,
+        setTotalQuantities
       }}
     >
       {children}
